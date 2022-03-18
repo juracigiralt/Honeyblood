@@ -1,0 +1,267 @@
+body{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("../IMG/panal.jpg");
+    font-weight: 500;
+    flex-wrap: wrap;
+    animation-name: zoomin;
+    animation-duration: 2s;
+    justify-content: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+.mielHeader{
+    width: 100%;
+    transition: 0.2s;
+    z-index: 1;
+    margin-bottom: -25%;   
+
+}
+.logo{
+    display: flex;
+    position: fixed;
+    left: 28%;
+    top: 25%;
+    width: 45%;
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    z-index: 3;
+
+}
+header{
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    background-image: url(../IMG//mielfinal3.png) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 8;
+
+    
+}
+header ul{
+    top: 0px;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    align-items: center;    
+    height: 80px;
+
+}
+header li{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+header li a{
+    text-decoration: none;
+    color: black;
+    opacity: 80%;
+
+}
+.logomenu{
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.redes{
+    display: flex;
+
+
+
+}
+.redes a {
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 70%;
+}
+.instasvg{
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+}
+@keyframes logo {
+    0% {
+        top: 20%;
+    }
+    100% {
+        top: 17%;
+    }
+    
+}
+.abeja{
+    position: fixed;
+    right: 200px;
+    top: 150px;
+    width: 70px;
+    height: 70px;
+    animation-name: abeja;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 2;
+}
+.abeja2{
+    position: fixed;
+    left: 200px;
+    top: 220px;
+    width: 90px;
+    height: 90px;
+    animation-name: abeja2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 4;
+}
+@keyframes abeja {
+    0% {
+        top: 400px;
+        right: 250px;
+    }
+    20% {
+        top: 300px;
+        right: 450px;
+    }
+    40% {
+        top: 350px;
+        right: 250px;
+    }
+    60% {
+        top: 200px;
+        right: 600px;
+    }
+    80% {
+        top: 210px;
+        right: 350px;
+    }
+    100% {
+        top: 120px;
+        right: 700px;
+    }
+    
+
+    
+}
+@keyframes abeja2 {
+    0% {
+        top: 150px;
+        left: 200px;
+    }
+    25% {
+        top: 200px;
+        left: 400px;
+    }
+    50% {
+        top: 200px;
+        left: 200px;
+    }
+    75% {
+        top: 300px;
+        left: 600px;
+    }
+    100% {
+        top: 350px;
+        left: 300px;
+    }
+
+}
+@keyframes logoo {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 17%;
+    }
+    
+}
+h1{
+    color: white;
+}
+main{
+    opacity: 0;
+    transition: 0.5s;
+}
+.fichasintegrantes{
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fdc72d;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    z-index: 7;
+
+}
+.integrantes{
+    padding-top: 50px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.fichasintegrantes h2{
+    color: white;
+    
+}
+.fotoficha02{
+    height: 500px;
+    width: 320px;
+    padding-top: 20px;
+    transition-duration: 1s;
+}
+.nameclass{
+    transition-duration: 1s;
+}
+.fichasintegrantes:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 0px 15px #fdc72d;
+ 
+    
+}
+.fichasintegrantes:hover .fotoficha02{
+    transform: translateY(-100px);
+
+    
+}
+.fichasintegrantes:hover .nameclass{
+    transform: translateY(-100px);
+    
+}
+.integrantestitle{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 10px;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    color: #fdc72d;
+    opacity: 80%;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    
+}
+.espacio{
+    height: 150px;
+}
